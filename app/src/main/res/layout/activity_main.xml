@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="2dp"
+        android:paddingStart="20dp"
+        android:id="@+id/textView1"
+        app:autoSizeTextType="uniform"
+        android:text="World's Largest NoBrokerage Property App"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:paddingLeft="20dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/myTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:background="#FFFFFF"
+        app:tabIndicatorColor="#FF0000"
+        app:tabSelectedTextColor="#FF0000 " />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/edittext_shadow"
+        >
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:hint="Search up to 3 Localities... "
+          />
+
+        <Button
+          android:background="@drawable/ic_baseline_search_24"
+           android:layout_width="36dp"
+           android:layout_weight="0"
+            android:layout_marginLeft="0dp"
+           android:layout_height="45dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:text="For Property Owners"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:paddingRight="2dp"
+            android:src="@drawable/aaaa"
+            tools:ignore="MissingConstraints" />
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/Owner_btn"
+        android:onClick="Owners_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Post Free Property Ad"
+        android:textSize="20dp"
+        android:background="@drawable/button_rounded"
+        android:textColor="#FFFFFF"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="259dp" />
+
+</LinearLayout>
+
